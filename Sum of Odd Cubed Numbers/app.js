@@ -23,6 +23,8 @@ var evens = [];
 
   if(odds.length > 1) {
   return odds.reduce(function(a, b) { return a + b; }, 0);
+  } else if (odds.length === 0) {
+  return 0;
   } else {
   return odds[0];
   }
